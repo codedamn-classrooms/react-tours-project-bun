@@ -1,3 +1,3 @@
-tabs: ["src/App.jsx", "src/Tour.jsx", "src/Tours.jsx"]
+tabs: ["src/Tour.jsx", "src/Tours.jsx", "src/App.jsx"]
 terminals: ["bun install && bun dev"]
 run-button: bun dev
