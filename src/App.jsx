@@ -10,11 +10,13 @@ function App() {
 
 	async function fetchTours() {
 		// set loading to true here
+		setLoading(true);
 
 		const data = await fetch(url);
 		const jsonData = await data.json();
 		setTours(jsonData);
 
+		setLoading(false);
 		// set loading to false here
 	}
 
@@ -30,9 +32,12 @@ function App() {
 		);
 	}
 
-	return tours.map((tour) => {
-		return <h2>{tour.name}</h2>;
-	});
+	return (
+		<main>
+			{/* send tours here */}
+			<Tours tours={[]} />
+		</main>
+	);
 }
 
 export default App;
